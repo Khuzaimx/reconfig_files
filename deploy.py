@@ -4,14 +4,15 @@ import zipfile
 import paramiko
 
 # ==============================================================================
-# Configuration Parameters (Update these for your new server)
+# Configuration Parameters (Hostinger KVM 2 Server Details)
 # ==============================================================================
-VM_HOST = "your-new-server-ip"
+VM_HOST = "your-hostinger-kvm2-ip-here"
 VM_PORT = 22
-VM_USER = "sj"
-VM_PASSWORD = "your-ssh-password-here"  # Or leave empty and configure VM_KEY_PATH
+VM_USER = "root"                         # Hostinger KVM default user is root
+VM_PASSWORD = "your-root-password-here"  # Or configure SSH keys below
 VM_KEY_PATH = None                       # Path to private SSH key file (optional)
-REMOTE_DIR = "/home/sj/psych_experiment_platform"
+REMOTE_DIR = "/root/psych_experiment_platform"
+
 
 # File name for temporary archive
 ARCHIVE_NAME = "project_deployment.zip"
